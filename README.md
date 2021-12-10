@@ -19,4 +19,4 @@
 
 
 
-![20211210_233230](https://user-images.githubusercontent.com/3926845/145599689-c87fdc32-61b5-4d72-82fd-441ace757ebb.gif)
+![image](https://user-images.githubusercontent.com/3926845/145599689-c87fdc32-61b5-4d72-82fd-441ace757ebb.gif)
