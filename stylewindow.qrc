@@ -1,0 +1,27 @@
+<RCC>
+    <qresource prefix="/StyleWindow">
+        <file>Resources/default.qss</file>
+        <file>Resources/logo.png</file>
+        <file>Resources/close.png</file>
+        <file>Resources/close_h.png</file>
+        <file>Resources/close_p.png</file>
+        <file>Resources/maximize.png</file>
+        <file>Resources/maximize_h.png</file>
+        <file>Resources/maximize_p.png</file>
+        <file>Resources/menu.png</file>
+        <file>Resources/menu_h.png</file>
+        <file>Resources/menu_p.png</file>
+        <file>Resources/minimize.png</file>
+        <file>Resources/minimize_h.png</file>
+        <file>Resources/minimize_p.png</file>
+        <file>Resources/restore.png</file>
+        <file>Resources/restore_h.png</file>
+        <file>Resources/restore_p.png</file>
+        <file>Resources/pin.png</file>
+        <file>Resources/pin_h.png</file>
+        <file>Resources/pin_p.png</file>
+        <file>Resources/unpin.png</file>
+        <file>Resources/unpin_h.png</file>
+        <file>Resources/unpin_p.png</file>
+    </qresource>
+</RCC>

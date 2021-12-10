@@ -1,0 +1,153 @@
+#logoLabel
+{
+	margin-left:3px;
+	margin-right:3px;
+	min-height:32px;
+	min-width:32px;
+	max-height:32px;
+	max-width:32px;
+	border-image:url(:/StyleWindow/Resources/logo.png)
+}
+
+#minToolButton
+{
+	min-height:38px;
+	min-width:38px;
+	max-height:38px;
+	max-width:38px;
+	border-image:url(:/StyleWindow/Resources/minimize.png);
+}
+
+#minToolButton:hover
+{
+	min-height:38px;
+	min-width:38px;
+	max-height:38px;
+	max-width:38px;
+	border-image:url(:/StyleWindow/Resources/minimize_h.png);
+}
+
+#minToolButton:pressed
+{
+	min-height:38px;
+	min-width:38px;
+	max-height:38px;
+	max-width:38px;
+	border-image:url(:/StyleWindow/Resources/minimize_p.png);
+}
+
+#minToolButton:checked
+{
+	min-height:38px;
+	min-width:38px;
+	max-height:38px;
+	max-width:38px;
+	border-image:url(:/StyleWindow/Resources/minimize_p.png);
+}
+
+#maxToolButton[MaxState="false"]
+{
+	min-height:38px;
+	min-width:38px;
+	max-height:38px;
+	max-width:38px;
+	border-image:url(:/StyleWindow/Resources/maximize.png);
+}
+
+#maxToolButton:hover[MaxState="false"]
+{
+	min-height:38px;
+	min-width:38px;
+	max-height:38px;
+	max-width:38px;
+	border-image:url(:/StyleWindow/Resources/maximize_h.png);
+}
+#maxToolButton:pressed[MaxState="false"]
+{
+	min-height:38px;
+	min-width:38px;
+	max-height:38px;
+	max-width:38px;
+	border-image:url(:/StyleWindow/Resources/maximize_p.png);
+}
+
+#maxToolButton:checked[MaxState="false"]
+{
+	min-height:38px;
+	min-width:38px;
+	max-height:38px;
+	max-width:38px;
+	border-image:url(:/StyleWindow/Resources/maximize_p.png);
+}
+
+#maxToolButton[MaxState="true"]
+{
+	min-height:38px;
+	min-width:38px;
+	max-height:38px;
+	max-width:38px;
+	border-image:url(:/StyleWindow/Resources/restore.png);
+}
+
+#maxToolButton:hover[MaxState="true"]
+{
+	min-height:38px;
+	min-width:38px;
+	max-height:38px;
+	max-width:38px;
+	border-image:url(:/StyleWindow/Resources/restore_h.png);
+}
+
+#maxToolButton:pressed[MaxState="true"]
+{
+	min-height:38px;
+	min-width:38px;
+	max-height:38px;
+	max-width:38px;
+	border-image:url(:/StyleWindow/Resources/restore_p.png);
+}
+
+#maxToolButton:checked[MaxState="true"]
+{
+	min-height:38px;
+	min-width:38px;
+	max-height:38px;
+	max-width:38px;
+	border-image:url(:/StyleWindow/Resources/restore_p.png);
+}
+
+#closeToolButton
+{
+	min-height:38px;
+	min-width:38px;
+	max-height:38px;
+	max-width:38px;
+	border-image:url(:/StyleWindow/Resources/close.png);
+}
+
+#closeToolButton:hover
+{
+	min-height:38px;
+	min-width:38px;
+	max-height:38px;
+	max-width:38px;
+	border-image:url(:/StyleWindow/Resources/close_h.png);
+}
+
+#closeToolButton:pressed
+{
+	min-height:38px;
+	min-width:38px;
+	max-height:38px;
+	max-width:38px;
+	border-image:url(:/StyleWindow/Resources/close_p.png);
+}
+
+#closeToolButton:checked
+{
+	min-height:38px;
+	min-width:38px;
+	max-height:38px;
+	max-width:38px;
+	border-image:url(:/StyleWindow/Resources/close_p.png);
+}
