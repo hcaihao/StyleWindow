@@ -11,6 +11,7 @@
 * Win快捷键+左右可跨屏移动
 * 标题栏按钮悬浮/点击/弹起时有不同效果
 * 上下左右边框可鼠标拉伸
+* 最大化状态下拖拽标题栏可以还原窗口
 
 # 功能演示
 ![image](https://user-images.githubusercontent.com/3926845/145587636-22c51bf9-1f82-4d14-adea-3f4a6e5c4185.gif)
