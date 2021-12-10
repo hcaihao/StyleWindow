@@ -28,9 +28,9 @@ FramelessWindow::FramelessWindow(QWidget* parent)
 	WindowEffect::addWindowAnimation((HWND)winId());
 	WindowEffect::addShadowEffect((HWND)winId());
 
-	connect(windowHandle(), &QWindow::screenChanged, this, [=]
-		{
-			window()->resize(window()->size());
+	connect(windowHandle(), &QWindow::screenChanged, this, [=] {
+		auto hWnd = reinterpret_cast<HWND>(windowHandle()->winId());
+		SetWindowPos(hWnd, NULL, 0, 0, 0, 0, SWP_NOMOVE | SWP_NOSIZE | SWP_FRAMECHANGED);
 		});
 }
 
