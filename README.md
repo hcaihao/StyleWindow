@@ -16,3 +16,6 @@
 
 # 功能演示
 ![image](https://user-images.githubusercontent.com/3926845/145587636-22c51bf9-1f82-4d14-adea-3f4a6e5c4185.gif)
+
+
+![image](https://user-images.githubusercontent.com/3926845/145596423-a287c4ff-15a2-47b3-b1f4-c896ba10587a.gif)
