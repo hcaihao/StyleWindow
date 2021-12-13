@@ -44,7 +44,7 @@ bool FramelessWindow::nativeEvent(const QByteArray& eventType, void* message, lo
 		int w = width();
 		int h = height();
 		bool lx = xPos < BORDER_WIDTH;
-		bool rx = xPos + 9 > w - BORDER_WIDTH;
+		bool rx = xPos > w - BORDER_WIDTH;
 		bool ty = yPos < BORDER_WIDTH;
 		bool by = yPos > h - BORDER_WIDTH;
 
