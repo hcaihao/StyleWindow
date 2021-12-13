@@ -23,7 +23,7 @@ FramelessWindow::FramelessWindow(QWidget* parent)
 	testLabel->setStyleSheet("background: rgb(240, 240, 240);");
 	layout->addWidget(testLabel);
 
-	setWindowFlags(Qt::FramelessWindowHint | Qt::WindowSystemMenuHint | Qt::WindowMinimizeButtonHint | Qt::WindowMaximizeButtonHint);
+	setWindowFlags(Qt::FramelessWindowHint | Qt::WindowMinimizeButtonHint | Qt::WindowMaximizeButtonHint);
 
 	WindowEffect::addWindowAnimation((HWND)winId());
 	WindowEffect::addShadowEffect((HWND)winId());
