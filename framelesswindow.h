@@ -12,6 +12,7 @@ public:
     FramelessWindow(QWidget* parent = Q_NULLPTR);
 protected:
     bool nativeEvent(const QByteArray& eventType, void* message, long* result);
+    void changeEvent(QEvent* event);
 private:
     bool isWindowMaximized(HWND hWnd);
     void monitorNCCALCSIZE(MSG* msg);

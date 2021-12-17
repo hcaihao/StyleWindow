@@ -58,11 +58,9 @@ void TitleBar::toggleMaxState()
 	if (window()->isMaximized())
 	{
 		window()->showNormal();
-		RefreshStyle(findChild<QToolButton*>("maxToolButton"), "MaxState", false);
 	}
 	else
 	{
 		window()->showMaximized();
-		RefreshStyle(findChild<QToolButton*>("maxToolButton"), "MaxState", true);
 	}
 }

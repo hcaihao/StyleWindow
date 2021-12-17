@@ -132,6 +132,16 @@ bool FramelessWindow::nativeEvent(const QByteArray& eventType, void* message, lo
 	return QWidget::nativeEvent(eventType, message, result);
 }
 
+void FramelessWindow::changeEvent(QEvent* event)
+{
+	if (event->type() == QEvent::WindowStateChange)
+	{
+		RefreshStyle(titleBar->findChild<QToolButton*>("maxToolButton"), "MaxState", isMaximized());
+	}
+
+	return QWidget::changeEvent(event);
+}
+
 bool FramelessWindow::isWindowMaximized(HWND hWnd)
 {
 	WINDOWPLACEMENT wp;
