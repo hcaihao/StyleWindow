@@ -104,7 +104,7 @@ bool FramelessWindow::nativeEvent(const QByteArray& eventType, void* message, lo
 				return false;
 			}
 
-			HMONITOR hMonitor = MonitorFromRect(&window_rect, MONITOR_DEFAULTTONEAREST);
+			HMONITOR hMonitor = MonitorFromRect(&window_rect, MONITOR_DEFAULTTONULL);
 			if (!hMonitor)
 			{
 				*result = HTNOWHERE;
@@ -146,19 +146,26 @@ bool FramelessWindow::isWindowMaximized(HWND hWnd)
 {
 	WINDOWPLACEMENT wp;
 	wp.length = sizeof(WINDOWPLACEMENT);
-	GetWindowPlacement(hWnd, &wp);
+	if (!GetWindowPlacement(hWnd, &wp))
+	{
+
+	}
 	return wp.showCmd == SW_MAXIMIZE;
 }
 
 void FramelessWindow::monitorNCCALCSIZE(MSG* msg)
 {
-	HMONITOR hMonitor = MonitorFromWindow(msg->hwnd, MONITOR_DEFAULTTONEAREST);
-	if (hMonitor && GetMonitorInfoW(hMonitor, &monitorInfo))
+	HMONITOR hMonitor = MonitorFromWindow(msg->hwnd, MONITOR_DEFAULTTONULL);
+	if (hMonitor != NULL)
 	{
-		NCCALCSIZE_PARAMS& params = *reinterpret_cast<NCCALCSIZE_PARAMS*>(msg->lParam);
-		params.rgrc[0].left = monitorInfo.rcWork.left;
-		params.rgrc[0].top = monitorInfo.rcWork.top;
-		params.rgrc[0].right = monitorInfo.rcWork.right;
-		params.rgrc[0].bottom = monitorInfo.rcWork.bottom;
+		GetMonitorInfoW(hMonitor, &monitorInfo);
 	}
+	
+	NCCALCSIZE_PARAMS& params = *reinterpret_cast<NCCALCSIZE_PARAMS*>(msg->lParam);
+	params.rgrc[0].left = monitorInfo.rcWork.left;
+	params.rgrc[0].top = monitorInfo.rcWork.top;
+	params.rgrc[0].right = monitorInfo.rcWork.right;
+	params.rgrc[0].bottom = monitorInfo.rcWork.bottom;
+
+	//qDebug() << params.rgrc[0].left << params.rgrc[0].top << params.rgrc[0].right << params.rgrc[0].bottom;
 }
